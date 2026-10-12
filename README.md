@@ -15,17 +15,22 @@ Aplicación de consola en Python que ejecuta las 25 consultas del proyecto **BDA
 - MongoDB 5.0 o superior (las consultas 16, 19 y 24 usan `$setWindowFields`)
 - Librería `pymongo`
 
+## Instalación
+
+```bash
+pip install pymongo
+```
 
 ## Uso
 
 ```bash
-python bdautos_app.py
+python 25_Consultas.py
 ```
 
 Por defecto se conecta a `mongodb://localhost:27017` y usa la base `BDAutos`. Para cambiarlo:
 
 ```bash
-python bdautos_app.py --uri mongodb://usuario:clave@host:27017 --db BDAutos
+python 25_Consultas.py --uri mongodb://usuario:clave@host:27017 --db BDAutos
 ```
 
 ### Menú
